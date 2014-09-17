@@ -29,3 +29,8 @@ C:\Code\SL.FG.FFL\SL.FG.FFL\bin\Debug\SL.FG.FFL.dll
 C:\Code\SL.FG.FFL\SL.FG.FFL\bin\Debug\SL.FG.FFL.pdb
 C:\Code\SL.FG.FFL\SL.FG.FFL\obj\Debug\SL.FG.FFL.dll
 C:\Code\SL.FG.FFL\SL.FG.FFL\obj\Debug\SL.FG.FFL.pdb
+C:\SL.FG.FFL_MSA\SL.FG.FFL\SL.FG.FFL\bin\Debug\SL.FG.FFL.dll
+C:\SL.FG.FFL_MSA\SL.FG.FFL\SL.FG.FFL\bin\Debug\SL.FG.FFL.pdb
+C:\SL.FG.FFL_MSA\SL.FG.FFL\SL.FG.FFL\obj\Debug\SL.FG.FFL.csprojResolveAssemblyReference.cache
+C:\SL.FG.FFL_MSA\SL.FG.FFL\SL.FG.FFL\obj\Debug\SL.FG.FFL.dll
+C:\SL.FG.FFL_MSA\SL.FG.FFL\SL.FG.FFL\obj\Debug\SL.FG.FFL.pdb

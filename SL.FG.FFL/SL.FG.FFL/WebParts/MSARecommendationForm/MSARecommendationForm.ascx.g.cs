@@ -648,7 +648,7 @@ namespace SL.FG.FFL.WebParts.MSARecommendationForm {
 
 <div class=""container"">
     <div class=""row"">
-        <div class=""col-lg-10 col-md-8 col-sm-8 col-xs-3"">
+        <div class=""col-lg-12"">
             "));
             global::System.Web.UI.HtmlControls.HtmlGenericControl @__ctrl1;
             @__ctrl1 = this.@__BuildControlmessage_div();

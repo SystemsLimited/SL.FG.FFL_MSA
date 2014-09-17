@@ -1428,7 +1428,7 @@ namespace SL.FG.FFL.WebParts.MSAForm {
                         "  border-radius: 5px !important;\r\n        background-color: #808080 !important;\r" +
                         "\n        color: white !important;\r\n        margin: 0px !important;\r\n    }\r\n</sty" +
                         "le>\r\n\r\n<div class=\"container containerMaxWidth\">\r\n    <div class=\"row\">\r\n       " +
-                        " <div class=\"col-lg-10 col-md-8 col-sm-8 col-xs-3\">\r\n            "));
+                        " <div class=\"col-lg-12\">\r\n            "));
             global::System.Web.UI.HtmlControls.HtmlGenericControl @__ctrl1;
             @__ctrl1 = this.@__BuildControlmessage_div();
             @__parser.AddParsedSubObject(@__ctrl1);

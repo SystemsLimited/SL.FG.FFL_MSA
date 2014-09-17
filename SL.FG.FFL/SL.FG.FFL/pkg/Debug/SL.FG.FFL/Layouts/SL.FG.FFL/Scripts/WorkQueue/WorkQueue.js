@@ -5,6 +5,34 @@
     return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
 }
 
+function removeURLParameter(url, parameter) {
+    //prefer to use l.search if you have a location/link object
+    var urlparts = url.split('?');
+    if (urlparts.length >= 2) {
+
+        var prefix = encodeURIComponent(parameter) + '=';
+        var pars = urlparts[1].split(/[&;]/g);
+
+        //reverse iteration as may be destructive
+        for (var i = pars.length; i-- > 0;) {
+            //idiom for string.startsWith
+            if (pars[i].lastIndexOf(prefix, 0) !== -1) {
+                pars.splice(i, 1);
+            }
+        }
+
+        url = urlparts[0] + '?' + pars.join('&');
+        return url;
+    } else {
+        return url;
+    }
+}
+
+function autoRefresh(forceGet) {
+    location.reload(forceGet)
+}
+
+
 $(document).ready(function () {
     $("#searchInput1").keyup(function () {
         //split the current value of searchInput
@@ -89,8 +117,7 @@ $(document).ready(function () {
 
     var status = getParameterByName('Status');
 
-    if (typeof status != 'undefined' && status != "" && status != null)
-    {
+    if (typeof status != 'undefined' && status != "" && status != null) {
         switch (status) {
             case "MSA_1":
                 alert('MSA Submitted...');
@@ -114,5 +141,12 @@ $(document).ready(function () {
             default:
                 break;
         }
+        var url = removeURLParameter(document.URL, "Status");
+
+        if (typeof url != 'undefined' && url != "" && url != null && url.length > 0) {
+            window.location.href = url;
+        }
     }
+
+    setInterval('autoRefresh(true)', 180000); // this will reload page after every 5 secounds;
 });
