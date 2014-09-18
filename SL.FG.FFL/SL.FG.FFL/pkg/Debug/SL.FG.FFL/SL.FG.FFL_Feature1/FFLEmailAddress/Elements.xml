@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{fcfcfc89-e7ef-4542-b30f-35290dcbbd77}"
+       Name="FFLEmailAddress"
+       DisplayName="FFL Email Address"
+       Type="Text"
+       Required="FALSE"
+       ShowInDisplayForm="FALSE" 
+       ShowInEditForm="FALSE" 
+       ShowInNewForm="FALSE" 
+       Group="Fatima Group">
+  </Field>
+</Elements>

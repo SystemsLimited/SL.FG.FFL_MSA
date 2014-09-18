@@ -6,10 +6,12 @@
         <SafeControl Assembly="SL.FG.FFL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c6a24861ee475e42" Namespace="SL.FG.FFL.WebParts.MSAForm" TypeName="*" />
         <SafeControl Assembly="SL.FG.FFL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c6a24861ee475e42" Namespace="SL.FG.FFL.WebParts.MSARecommendationForm" TypeName="*" />
         <SafeControl Assembly="SL.FG.FFL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c6a24861ee475e42" Namespace="SL.FG.FFL.WebParts.WorkQueue" TypeName="*" />
+        <SafeControl Assembly="SL.FG.FFL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c6a24861ee475e42" Namespace="SL.FG.FFL.WebParts.AddEventsToMSASchedule" TypeName="*" />
       </SafeControls>
     </Assembly>
   </Assemblies>
   <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\SL.FG.FFL.WebParts\AddEventsToMSASchedule\AddEventsToMSAScheduleUserControl.ascx" />
     <TemplateFile Location="Layouts\SL.FG.FFL\CSS\fonts\glyphicons-halflings-regular.eot" />
     <TemplateFile Location="Layouts\SL.FG.FFL\CSS\fonts\glyphicons-halflings-regular.ttf" />
     <TemplateFile Location="Layouts\SL.FG.FFL\CSS\fonts\glyphicons-halflings-regular.woff" />

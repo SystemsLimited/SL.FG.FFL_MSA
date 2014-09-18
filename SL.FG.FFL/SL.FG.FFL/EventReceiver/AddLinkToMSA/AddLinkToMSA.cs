@@ -31,7 +31,26 @@ namespace SL.FG.FFL.EventReceiver.AddLinkToMSA
 
                     SPListItem spListItem = properties.ListItem;
                     spListItem["MSAFormLink"] = spFieldURL;
-                    spListItem.Update();
+
+                    SPGroup spGroup = properties.Web.SiteGroups["HSE-FFL"];
+                    SPRoleDefinition spRole = properties.Web.RoleDefinitions["Contribute"];
+
+                    SPRoleAssignment roleAssignment = new SPRoleAssignment(spGroup);
+                    roleAssignment.RoleDefinitionBindings.Add(spRole);
+
+                    if (Convert.ToString(spListItem["FFLEmailAddress"]) != null)
+                    {
+                        SPUser spUSer = properties.Web.SiteUsers.GetByEmail(Convert.ToString(spListItem["FFLEmailAddress"]));
+
+                        SPRoleDefinition spRole1 = properties.Web.RoleDefinitions["Read"];
+                        SPRoleAssignment roleAssignment1 = new SPRoleAssignment(spUSer);
+                        roleAssignment1.RoleDefinitionBindings.Add(spRole1);
+                        spListItem.BreakRoleInheritance(false);
+                        spListItem.RoleAssignments.Add(roleAssignment);
+                        spListItem.RoleAssignments.Add(roleAssignment1);
+                    }
+
+                    spListItem.Update();                    
                 }
                 else
                 {

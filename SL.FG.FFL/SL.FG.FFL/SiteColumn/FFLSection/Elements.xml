@@ -1,15 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
   <Field
-       ID="{57c26b5a-2f99-4ccb-9ff6-dbbaf47623a9}"
+       ID="{9d1b80cd-0cd9-42c9-bcb7-e120a20b51a0}"
        Name="FFLSection"
        DisplayName="Section"
-       Type="Lookup" 
-       List="Lists/Section" 
-       ShowField="Title"
+       Type="Text"
        Required="FALSE"
        Group="Fatima Group">
   </Field>
 </Elements>
-
- 

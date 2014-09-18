@@ -25,9 +25,6 @@
     <ElementFile Location="Section\Schema.xml" />
     <ElementManifest Location="MasterPage\Elements.xml" />
     <ElementFile Location="MasterPage\System_FG_bootstrap-3.master" />
-    <ElementManifest Location="FFLArea\Elements.xml" />
-    <ElementManifest Location="FFLDepartments\Elements.xml" />
-    <ElementManifest Location="FFLSection\Elements.xml" />
     <ElementManifest Location="MSAFormLink\Elements.xml" />
     <ElementManifest Location="MSAStatus\Elements.xml" />
     <ElementManifest Location="MSAForm\Elements.xml" />
@@ -38,6 +35,12 @@
     <ElementFile Location="WorkQueue\WorkQueue.webpart" />
     <ElementManifest Location="FFLScheduleName\Elements.xml" />
     <ElementManifest Location="FFLScheduleDesignation\Elements.xml" />
+    <ElementManifest Location="AddEventsToMSASchedule\Elements.xml" />
+    <ElementFile Location="AddEventsToMSASchedule\AddEventsToMSASchedule.webpart" />
+    <ElementManifest Location="FFLEmailAddress\Elements.xml" />
+    <ElementManifest Location="FFLArea\Elements.xml" />
+    <ElementManifest Location="FFLDepartments\Elements.xml" />
+    <ElementManifest Location="FFLSection\Elements.xml" />
     <ElementManifest Location="FFLMSAScheduleContentType\Elements.xml" />
     <ElementManifest Location="MSAScheduleInstance\Elements.xml" />
     <ElementManifest Location="MSASchedule\Elements.xml" />

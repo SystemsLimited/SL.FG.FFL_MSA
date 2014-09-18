@@ -61,6 +61,14 @@
     <Compile Include="Layouts\SL.FG.FFL\Common\Email.cs" />
     <Compile Include="Layouts\SL.FG.FFL\Common\Utility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\AddEventsToMSASchedule\AddEventsToMSASchedule.cs" />
+    <Compile Include="WebParts\AddEventsToMSASchedule\AddEventsToMSAScheduleUserControl.ascx.cs">
+      <DependentUpon>AddEventsToMSAScheduleUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebParts\AddEventsToMSASchedule\AddEventsToMSAScheduleUserControl.ascx.designer.cs">
+      <DependentUpon>AddEventsToMSAScheduleUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="WebParts\MSAForm\MSAForm.ascx.cs">
       <DependentUpon>MSAForm.ascx</DependentUpon>
     </Compile>
@@ -88,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ContentType\FFLMSAScheduleContentType\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{4828ae25-b245-4811-a0bc-814981c9959e}</SharePointProjectItemId>
+      <SharePointProjectItemId>{efff843d-143e-461a-823f-bea08e4e9a60}</SharePointProjectItemId>
     </None>
     <None Include="EventReceiver\AddLinkToMSA\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{f4fb4533-b5e1-43b3-93d8-33cf6ecee72a}</SharePointProjectItemId>
@@ -139,10 +147,10 @@
       <SharePointProjectItemId>{67ee8071-4cfb-4a13-b7fc-ae93e6fa3ceb}</SharePointProjectItemId>
     </None>
     <None Include="Lists\MSASchedule\MSAScheduleInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{8370e5aa-4658-4113-a234-b997e3946a7f}</SharePointProjectItemId>
+      <SharePointProjectItemId>{725cd4fa-21c0-4085-865f-bc904d347564}</SharePointProjectItemId>
     </None>
     <None Include="Lists\MSASchedule\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a7c01d30-2562-4989-bc3e-c357afb4a6c8}</SharePointProjectItemId>
+      <SharePointProjectItemId>{0dd10ba3-9589-455d-b390-f84280cfc428}</SharePointProjectItemId>
     </None>
     <None Include="Lists\MSA\MSAInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{39f3ddf8-df38-41b7-80d8-9317f732800f}</SharePointProjectItemId>
@@ -167,10 +175,13 @@
       <DependentUpon>Package.package</DependentUpon>
     </None>
     <None Include="SiteColumn\FFLArea\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{a14d28b3-8488-4f6c-990b-37c89ab4c28f}</SharePointProjectItemId>
+      <SharePointProjectItemId>{2d749b28-bdc2-4467-ba5a-2c124b55b799}</SharePointProjectItemId>
     </None>
     <None Include="SiteColumn\FFLDepartments\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{20093254-99bc-49b1-b85b-fb340dcd72d4}</SharePointProjectItemId>
+      <SharePointProjectItemId>{11ebcce2-5c24-49a4-a5d0-50ccb6250399}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumn\FFLEmailAddress\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{64fa7b45-2c0e-4824-847e-d5ac1cfefccf}</SharePointProjectItemId>
     </None>
     <None Include="SiteColumn\FFLScheduleDesignation\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{718ca556-9b26-4ac8-9aa7-4d2a2fa30523}</SharePointProjectItemId>
@@ -179,13 +190,17 @@
       <SharePointProjectItemId>{ecf4a932-59d6-479c-99c0-1e9889e7da1b}</SharePointProjectItemId>
     </None>
     <None Include="SiteColumn\FFLSection\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{e2434681-ba81-43eb-a193-089248b3a19e}</SharePointProjectItemId>
+      <SharePointProjectItemId>{e6d4d03d-ca47-4f66-a87f-b973982bf21f}</SharePointProjectItemId>
     </None>
     <None Include="SiteColumn\MSAFormLink\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{cbb09abe-6687-482d-aa07-9a5aea02cd30}</SharePointProjectItemId>
     </None>
     <None Include="SiteColumn\MSAStatus\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{2a9ce134-f8d6-4869-9871-d1b0e553ebc0}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\AddEventsToMSASchedule\AddEventsToMSASchedule.webpart" />
+    <None Include="WebParts\AddEventsToMSASchedule\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7ae07957-5911-466c-8735-c3ad9514d43e}</SharePointProjectItemId>
     </None>
     <None Include="WebParts\MSAForm\MSAForm.webpart" />
     <None Include="WebParts\MSAForm\SharePointProjectItem.spdata">
@@ -257,11 +272,14 @@
     </Content>
     <Content Include="SiteColumn\FFLArea\Elements.xml" />
     <Content Include="SiteColumn\FFLDepartments\Elements.xml" />
+    <Content Include="SiteColumn\FFLEmailAddress\Elements.xml" />
     <Content Include="SiteColumn\FFLScheduleDesignation\Elements.xml" />
     <Content Include="SiteColumn\FFLScheduleName\Elements.xml" />
     <Content Include="SiteColumn\FFLSection\Elements.xml" />
     <Content Include="SiteColumn\MSAFormLink\Elements.xml" />
     <Content Include="SiteColumn\MSAStatus\Elements.xml" />
+    <Content Include="WebParts\AddEventsToMSASchedule\AddEventsToMSAScheduleUserControl.ascx" />
+    <Content Include="WebParts\AddEventsToMSASchedule\Elements.xml" />
     <Content Include="WebParts\MSAForm\Elements.xml" />
     <Content Include="WebParts\MSAForm\MSAForm.ascx">
       <Generator>SharePointWebPartCodeGenerator</Generator>
