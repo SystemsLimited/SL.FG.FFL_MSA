@@ -125,19 +125,6 @@ namespace SL.FG.FFL.WebParts.MSAForm
                     }
                     else
                     {
-                        if (!CheckPermission_Authenticated_Users())
-                        {
-                            DisableControls();
-
-                            string accessDeniedUrl = Utility.GetRedirectUrl("Access_Denied");
-
-                            if (!String.IsNullOrEmpty(accessDeniedUrl))
-                            {
-                                DisableControls();
-                                Page.Response.Redirect(accessDeniedUrl, false);
-                            }
-                        }
-
                         UpdateControls(false);//Set default values and restrict controls on the basis of situation
                     }
                 }
@@ -149,7 +136,6 @@ namespace SL.FG.FFL.WebParts.MSAForm
                 message_div.InnerHtml = "Something went wrong!!! Please Contact the administrator.";
                 DisableControls();
             }
-        
         }
 
         private bool IsMSASubmitted(SPWeb oSPWeb, int scheduleId)
@@ -396,23 +382,6 @@ namespace SL.FG.FFL.WebParts.MSAForm
                 using (SPWeb oSPWeb = oSPsite.OpenWeb())
                 {
                     string groupName = Utility.GetValueByKey("MasterGroup");
-                    var spGroup = oSPWeb.Groups[groupName];
-                    if (spGroup != null)
-                    {
-                        isMember = oSPWeb.IsCurrentUserMemberOfGroup(spGroup.ID);
-                    }
-                }
-            }
-            return isMember;
-        }
-        private bool CheckPermission_Authenticated_Users()
-        {
-            bool isMember = false;
-            using (SPSite oSPsite = new SPSite(SPContext.Current.Web.Url))
-            {
-                using (SPWeb oSPWeb = oSPsite.OpenWeb())
-                {
-                    string groupName = Utility.GetValueByKey("Authenticated_Users");
                     var spGroup = oSPWeb.Groups[groupName];
                     if (spGroup != null)
                     {

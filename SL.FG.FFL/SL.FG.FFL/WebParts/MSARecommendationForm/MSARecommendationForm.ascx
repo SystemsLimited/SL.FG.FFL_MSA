@@ -30,7 +30,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">
+        <div class="col-lg-10 col-md-8 col-sm-8 col-xs-3">
             <div id="message_div" runat="server" class="messageDiv">
             </div>
             <div class="panel panel-success">
